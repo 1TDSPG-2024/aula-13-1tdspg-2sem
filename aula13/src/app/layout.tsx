@@ -6,14 +6,14 @@ export const metadata: Metadata = {
 };
 
 export const viewport = {
-  width: 1920,
-  height: 1080,
+  width: "device-width",
+  // height: 1080,
   initialScale: 1.0,
-  maximumScale: 5.0,
+  // maximumScale: 5.0,
   colorScheme: 'dark'
 }
 
-export default function RootLayout({
+export default function RootLayout({ // ÚNICO componente com que deve ter o HTML e BODY!!
   children,
 }: Readonly<{
   children: React.ReactNode;
