@@ -1,3 +1,5 @@
+import Cabecalho from "@/components/Cabecalho/Cabecalho";
+import Rodape from "@/components/Rodape/Rodape";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -8,7 +10,7 @@ export const metadata: Metadata = {
 export const viewport = {
   initialScale: 1.0,
   width: "device-width",
-  colorScheme:"light"
+  colorScheme: "light"
 }
 
 export default function RootLayout({
@@ -19,7 +21,9 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body>
+        <Cabecalho />
         {children}
+        <Rodape />
       </body>
     </html>
   );
