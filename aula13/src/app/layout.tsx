@@ -1,3 +1,5 @@
+import Cabecalho from "@/Components/Cabecalho/Cabecalho";
+import Rodape from "@/Components/Rodape/Rodape";
 import type { Metadata } from "next";
 
 
@@ -16,7 +18,9 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
   return (
     <html lang="pt-br">
       <body>
+        <Cabecalho />
         {children}
+        <Rodape />
       </body>
     </html>
   );
