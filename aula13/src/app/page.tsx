@@ -1,9 +1,7 @@
-export default function Home(){
+export default function Produtos(){
   return(
     <div>
-    <h1>
-    vamo
-    </h1>
+    <h1>Home</h1>
     </div>
   )
 }
